@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Селекторы CSS</title>
+  <style>
+      table{
+        color:green;
+      }
+      .list-item {
+        color:red;
+      }
+      #selector-types {
+        color:orange;
+      }
+      .lorem,.lorem1 {
+        color:yellow;
+      }
+      .about-selectors li {
+        color:aqua;
+      }
+      [data-text-color] {
+        color:crimson;
+      }
+      h1 {
+        color:darkmagenta;
+      }
+      #items2 {
+        color:yellow;
+      }
+      #email {
+        color:blue;
+      }
+      #button {
+        color:chocolate;
+      }
+  </style>
+</head>
+<body>
+      <header>
+            <div>
+                  <h1>Селекторы CSS.Специфика</h1>
+            </div>
+            <hr>
+            <div id="selector-types">
+                  <h2>Виды селекторов:</h2>
+            </div>
+      </header>
+      <main>
+            <img src="./images/1476977488.jpg" alt="CSS">
+            <ul class="about-selectors">
+              <li>1.По названию тега: table {color:green}. Все элементы тега table будут отоброженны зеленым цветом шрифта.</li>
+              <li>2.По классу: .list-item {color:red}. Все элементы содержащие класс list-item будут отображаться зеленым цветом.</li>
+              <li>3.По id: #selector-types {color: orangered}. Все элементы содержащие id: #selector-types будут отображены оранжевым цветом.</li>
+              <li>4.По нескольким классам: .lorem,.lorem1 {color:yellow}. Все элементы содержащие .lorem,.lorem1 будут желтого цвета </li>
+              <li>5.По вложенности: about-selectors li {color:aqua}.Все элементы с li вложенные в список ul под классом about-selectors буду отображаться голубым цветом.</li>
+            </ul>
+            
+            <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit cupiditate alias inventore et a voluptates cumque qui <br> maiores necessitatibus quas ullam tempore sapiente magni ab laudantium maxime nesciunt odio laborum nulla rem <br> saepe aut modi, eligendi corrupti! Animi similique reiciendis asperiores dolores maiores. Accusantium numquam <br> facere recusandae totam deleniti ea mollitia distinctio itaque veniam nulla ab dolore magni amet deserunt, repellat <br> minima natus provident, voluptatem incidunt aspernatur? Eos sequi voluptas reprehenderit pariatur beatae <br> aut recusandae hic cum, quae, obcaecati esse iure eaque fugiat similique nobis commodi! Repellat iure dolores,<br> aperiam voluptatibus, porro doloribus in aliquam repellendus, minus excepturi ut. Non.
+            </p>
+            <br>
+            <br>
+            <br>
+            <p class="lorem1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit cupiditate alias inventore et a voluptates cumque qui <br> maiores necessitatibus quas ullam tempore sapiente magni ab laudantium maxime nesciunt odio laborum nulla rem <br> saepe aut modi, eligendi corrupti! Animi similique reiciendis asperiores dolores maiores. Accusantium numquam <br> facere recusandae totam deleniti ea mollitia distinctio itaque veniam nulla ab dolore magni amet deserunt, repellat <br> minima natus provident, voluptatem incidunt aspernatur? Eos sequi voluptas reprehenderit pariatur beatae <br> aut recusandae hic cum, quae, obcaecati esse iure eaque fugiat similique nobis commodi! Repellat iure dolores,<br> aperiam voluptatibus, porro doloribus in aliquam repellendus, minus excepturi ut. Non.
+            </p>
+            <br>
+            <br>
+            <br>
+            <ul class="list-item">
+                <li>list-item1</li>
+                <li>list-item2</li>
+                <li>list-item3</li>
+                <li>list-item4</li>
+                <li>list-item5</li>
+            </ul>
+            <br>
+            <br>
+            <p data-text-color>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit cupiditate alias inventore et a voluptates cumque qui <br> maiores necessitatibus quas ullam tempore sapiente magni ab laudantium maxime nesciunt odio laborum nulla rem <br> saepe aut modi, eligendi corrupti! Animi similique reiciendis asperiores dolores maiores. Accusantium numquam <br> facere recusandae totam deleniti ea mollitia distinctio itaque veniam nulla ab dolore magni amet deserunt, repellat <br> minima natus provident, voluptatem incidunt aspernatur? Eos sequi voluptas reprehenderit pariatur beatae <br> aut recusandae hic cum, quae, obcaecati esse iure eaque fugiat similique nobis commodi! Repellat iure dolores,<br> aperiam voluptatibus, porro doloribus in aliquam repellendus, minus excepturi ut. Non.
+            </p>
+            <br>
+            <br>
+            <p style="color:brown">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit cupiditate alias inventore et a voluptates cumque qui <br> maiores necessitatibus quas ullam tempore sapiente magni ab laudantium maxime nesciunt odio laborum nulla rem <br> saepe aut modi, eligendi corrupti! Animi similique reiciendis asperiores dolores maiores. Accusantium numquam <br> facere recusandae totam deleniti ea mollitia distinctio itaque veniam nulla ab dolore magni amet deserunt, repellat <br> minima natus provident, voluptatem incidunt aspernatur? Eos sequi voluptas reprehenderit pariatur beatae <br> aut recusandae hic cum, quae, obcaecati esse iure eaque fugiat similique nobis commodi! Repellat iure dolores,<br> aperiam voluptatibus, porro doloribus in aliquam repellendus, minus excepturi ut. Non.
+            </p>
+            <table>
+                  <tr>
+                    <td>items1</td>
+                    <td id="items2">items2</td>
+                    <td>items3</td>
+                    <td>items4</td>
+                    <td>items5</td>
+                  </tr>
+            </table>
+      </main>
+      <footer>
+            <br>
+            <hr>
+            <form>
+                  <label for="email">E-mail:</label>
+                  <input type="email" id="email">
+                  <br>
+                  <button type="submit" id="button">Отправить</button>
+            </form>
+            <hr>
+            <p style="color:coral" id="footer"> &copy;Anton S.<br>
+            </p>
+      </footer>
+</body>
+</html>
